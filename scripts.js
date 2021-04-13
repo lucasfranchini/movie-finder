@@ -26,7 +26,6 @@ function comprar(botao){
         nome: nomeComprador,
         quantidade: numeroAssentos
     };
-    console.log(filme.id);
     const promessa = axios.post(`https://mock-api.bootcamp.respondeai.com.br/api/v2/moviefinder/filmes/${filme.id}/ingresso`,compra);
     promessa.then(finalizarCompra);
     promessa.catch(tratarErro);
