@@ -3,7 +3,6 @@ promessa.then(popularFilmes);
 
 function popularFilmes (resposta){
     const filmes = resposta.data;
-    console.log(filmes);
     const campoFilmes = document.querySelector(".movies");
     for(let i =0;i<filmes.length;i++){
         campoFilmes.innerHTML += `
